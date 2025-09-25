@@ -1,26 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer} from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import ExcerciseScreen from './screens/exerciseScreen';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import TestScreen from './src/screens/TestScreen';
+import ListScreen from './src/screens/ListScreen';
 
-const Stack = createStackNavigator();
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={ExcerciseScreen}></Stack.Screen>
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+const navigator=createStackNavigator(
+  {
+  Test:TestScreen,
+  List:ListScreen
+},
+{
+  initialRouteName:"List",
+  defaultNavigationOptions:{
+    title:"App"
+  }
 }
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default createAppContainer(navigator); 

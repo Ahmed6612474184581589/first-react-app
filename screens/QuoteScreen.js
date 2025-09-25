@@ -7,8 +7,8 @@ const QuoteScreen = () => {
 
     return (
         <View style={styles.container}>
-            <Text>{quote}</Text>
-            <Text>{author}</Text>
+            <Text style={styles.quoteStyle}>{quote}</Text>
+            <Text style={styles.authorStyle}>{author}</Text>
         </View>
     );
 };
