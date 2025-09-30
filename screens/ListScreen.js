@@ -27,3 +27,5 @@ const ListScreen = () => {
 const style=StyleSheet.create({})
 
 export default ListScreen;
+
+//novi screen - student screen - informacije o učeniku:Ime,PRezime,Datum rođenja, broj indeksa
