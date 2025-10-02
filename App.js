@@ -1,19 +1,3 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-import TestScreen from './src/screens/TestScreen';
-import ListScreen from './src/screens/ListScreen';
-
-const navigator=createStackNavigator(
-  {
-  Test:TestScreen,
-  List:ListScreen
-},
-{
-  initialRouteName:"List",
-  defaultNavigationOptions:{
-    title:"App"
-  }
-}
-);
-
-export default createAppContainer(navigator); 
+import {statusBar} from 'expo-status-bar';
+import {StyleSheet, Text, View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
