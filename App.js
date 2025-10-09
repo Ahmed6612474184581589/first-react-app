@@ -21,6 +21,7 @@ export default function App() {
                 <Stack.Screen name="Quote" component={QuoteScreen} />
                 <Stack.Screen name="Button" component={ButtonScreen} />
                 <Stack.Screen name="Menu" component={MenuScreen} />
+                <Stack.Screen name="Students" component={StudentsScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
