@@ -1,3 +1,27 @@
 import {statusBar} from 'expo-status-bar';
 import {StyleSheet, Text, View} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import MainScreen from "./screens/MainScreen";
+import MenuScreen from "./screens/MenuScreen";
+import QuizScreen from "./screens/quizScreen";
+import ExcerciseSCreen from "./screens/ExcerciseScreen";
+import ButtonScreen from "./screens/ButtonScreen";
+import ListScreen from "./screens/ListScreen";
+import QuoteScreen from "./screens/QuoteScreen";
+
+const Stack = createNativeStackNavigator();
+
+export default function App() {
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Main">
+                <Stack.Screen name="Main" component={MainScreen} />
+                <Stack.Screen name="List" component={ListScreen} />
+                <Stack.Screen name="Quote" component={QuoteScreen} />
+                <Stack.Screen name="Button" component={ButtonScreen} />
+                <Stack.Screen name="Menu" component={MenuScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
+}
