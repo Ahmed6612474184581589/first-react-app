@@ -11,6 +11,7 @@ const MenuScreen = (props) => {
             <Button title="Go to box screen" onPress={() => props.navigation.navigate("Box")}/>
             <Button title="Go to box challenge screen" onPress={() => props.navigation.navigate("BoxChallenge")}/>
             <Button title="Go to advanced box screen" onPress={() => props.navigation.navigate("AdvancedBox")}/>
+            <Button title="Go to posts screen challenge" onPress={() => props.navigation.navigate("PostsScreenChallenge")}/>
         </View> //touchabel opacity koji će voditi na drugi screen
     );
 };

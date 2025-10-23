@@ -2,9 +2,9 @@ import React from "react";
 import {Text, StyleSheet, FlatList, View} from "react-native"
 
 const students=[
-    {name:"Sara", surname:"Saric",age="25"},
-    {name:"Nidal", surname:"Nidalović",age="28"},
-    {name:"Lejla", surname:"Begić",age="17"}
+    {name:"Sara", surname:"Saric",age:"25"},
+    {name:"Nidal", surname:"Nidalović",age:"28"},
+    {name:"Lejla", surname:"Begić",age:"17"}
 ];
 
 const ListScreen = () => {

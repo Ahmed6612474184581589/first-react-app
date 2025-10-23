@@ -20,14 +20,14 @@ class PostsScreen extends React.Component {
     render(){
         const {posts} = this.state;
         return(
-            <View>
+            <View style={styles.container}>
                 <Text>Posts Screen</Text>
                 <Flatlist>
                     keyExtractor={posts => posts.id}
                     data = {posts}
                     initialNumToRender={10}
                     renderItem = {({item}) => (
-                        <View>
+                        <View style={styles.card}>
                             <Text>{item.id}</Text>
                             <Text>{item.title}</Text>
                         </View>
@@ -41,6 +41,6 @@ class PostsScreen extends React.Component {
     }
 }
 
-const styles = StyleSheet.create({});
+
 
 export default PostsScreen;

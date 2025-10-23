@@ -13,6 +13,7 @@ import BoxScreen from "./screens/BoxScreen";
 import BoxScreenChallenge from "./screens/BoxScreenChallenge";
 import AdvancedBox from "./screens/AdvancedBox"; 
 import PostsScreen from "./screens/PostsScreen";
+import PostsScreenChallenge from "./screens/PostsScreenChallenge";
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,8 @@ export default function App() {
                 <Stack.Screen name="BoxChallenge" component={BoxScreenChallenge} />
                 <Stack.Screen name="AdvancedBox" component={AdvancedBox} />
                 <Stack.Screen name="Posts" component={PostsScreen} />
+                <Stack.Screen name="PostChallenge" component={PostsScreenChallenge} />
+                
             </Stack.Navigator>
         </NavigationContainer>
     );
