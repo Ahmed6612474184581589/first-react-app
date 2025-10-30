@@ -1,0 +1,75 @@
+[
+    {
+        "id":1,
+        "name":"Iphone X",
+        "category":"phone",
+        "price":"$400",
+        "stock":"Yes",
+        "image":"https://assets.manufactum.de/p/067/067326/67326_01.jpg/telefon-w-48.jpg?profile=pdsmain_1500",
+        "description":"Vrlo dobar telefon"
+    },
+    {
+        "id":2,
+        "name":"Patike",
+        "category":"shoes",
+        "price":"$100",
+        "stock":"Yes",
+        "image":"https://www.jeordiesmen.com/uploads/product/small/8_JRT32KL36M005_T004.jpg",
+        "description":"Odlične patike"
+    },
+    {
+        "id":3,
+        "name":"Lopta",
+        "category":"sports",
+        "price":"$30",
+        "stock":"No",
+        "image":"https://pepco.ba/wp-content/uploads/2025/04/619123-1440x1744.jpg",
+        "description":"Dobra za fudbala"
+    },
+    {
+        "id":4,
+        "name":"Automobil",
+        "category":"cars",
+        "price":"$25000",
+        "stock":"Yes",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Skoda_Felicia_outside_Robinson.JPG/1200px-Skoda_Felicia_outside_Robinson.JPG",
+        "description":"Škoda felicia"
+    },
+    {
+        "id":5,
+        "name":"Sat",
+        "category":"clocks",
+        "price":"$120",
+        "stock":"No",
+        "image":"https://shop.rmg.co.uk/cdn/shop/files/350-watch-tan-strap.jpg?v=1752148537",
+        "description":"Originalni sat veoma kvalitetan"
+    },
+    {
+        "id":6,
+        "name":"Televizor",
+        "category":"electronics",
+        "price":"$600",
+        "stock":"Yes",
+        "image":"https://mi.hr/media/catalog/product/cache/bbf67f0a84e9648802f48a5a16aaa8cd/3/1/31663_xiaomi_mi_led_smart_tv_p1_43_1_.webp",
+        "description":"Divan televizor"
+    },
+    {
+        "id":7,
+        "name":"Ventilator",
+        "category":"electronics",
+        "price":"$85",
+        "stock":"Yes",
+        "image":"https://www.cloud-storefiles.com/static/11537_1686225805ehlo60rt2t.png",
+        "description":"Dobro puše"
+    },
+    {
+        "id":8,
+        "name":"Slika",
+        "category":"paintings",
+        "price":"$35",
+        "stock":"No",
+        "image":"https://images.saatchiart.com/saatchi/1869529/art/9530103/8593205-KRORMKZB-7.jpg",
+        "description":"Prekrasna slika"
+    }
+
+]
