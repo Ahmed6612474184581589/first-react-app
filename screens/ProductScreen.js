@@ -16,21 +16,34 @@ class ProductScreen extends React.Component{
     }
     render(){
         return(
-            <View>
-                <Text style={styles.screenTitle}>Product screen</Text>
-                data={this.state.products}
-                keyExtractor={product => product.id}
-                renderItem{({item}) => (
-                    <View>
-                        <Text style={styles.cardWrapper}>Name: {item.name}</Text>
-                        <Text style={styles.cardWrapper}>Category: {item.category}</Text>
-                        <Text style={styles.cardWrapper}>Price: {item.price}</Text>
-                        <Text style={styles.cardWrapper}>Stock: {item.stock}</Text>
-                        <Image source={require("../data/products.json" + item.image)} />
-                        <Text style={styles.cardWrapper}>Description: {item.description}</Text>
-                    </View>
-                )}
-            </View>
+            <ScrollView>
+                <View style={styles.container}>
+                    <Text>Top products of 2020</Text>
+                    <FlatList
+                        data={this.state.products}
+                        renderItem={({item})}=>(
+                            <View style={styles.cardWrapper}> 
+                                <Text>Name: {item.name}</Text>
+                                <Text>Category: {item.category}</Text>
+                                <Text>Price: {item.price}</Text>
+                                <Text>Stock: {item.stock}</Text>
+                                <Image source={require("../data/products.json" + item.image)} />
+                                <Text>Description: {item.description}</Text>
+                            </View>
+                        )}
+                    />
+                </View>
+            </ScrollView>
+        )
+    }
+}
+
+const styles = StyleSheet.create({
+    screenTitle:{
+        fontSize:20,
+        textAlign:"center",
+                </View>
+            </ScrollView>
         )
     }
 }
